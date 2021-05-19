@@ -8,5 +8,6 @@ build:
 
 .PHONY: publish
 publish:
-	git commit -am "Release $(VERSION)"
+	git add x86_64
+	git commit -m "Release $(VERSION)"
 	git push origin main
